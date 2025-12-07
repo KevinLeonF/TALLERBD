@@ -1,0 +1,348 @@
+/* Barra superior */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 12px 25px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Enlaces */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown span {
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: white;
+  color: black;
+  min-width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #eee;
+}
+
+/* Mostrar menú al pasar mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Espaciado general */
+.content {
+  padding: 20px;
+}
+
+/* Página de inicio */
+.home {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.home p {
+  font-size: 18px;
+  color: white;
+  border: 4px;
+}
+/* ------------------------------
+   ESTILOS GENERALES
+--------------------------------*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  /*background-image: /*url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuAzJkWVX43SvZ5poyB7XT1Y7ChTSIuSigFg&s");
+  background-image:  url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fcl.pinterest.com%2Fkarin_kapa%2Flentes%2F&psig=AOvVaw1nIrlfyy7scT1X767dQKi5&ust=1764353761503000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJjDi474kpEDFQAAAAAdAAAAABAT");*/
+  background-image: url('https://phantom-expansion.unidadeditorial.es/49897660209e417fbb6a3ab0f86d1ffa/crop/0x343/800x793/f/webp/assets/multimedia/imagenes/2023/02/02/16753307877375.jpg');/*https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=1920*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Imagen en esquina inferior derecha */
+/*.content::after {
+  content: '';
+  position: fixed;
+  bottom: 0px;
+  ////  right  -/-  left*: -160px;
+  ////  top: 240px;
+  left: 20px;
+  width: 270px;
+  height: 250px;
+  -*-*- Reemplaza esta URL con tu imagen de esquina -*-*-
+  background-image: url('https://m.media-amazon.com/images/I/61ta381AcDS._AC_UF894,1000_QL80_.jpg');  /-/-/-https://i.pinimg.com/736x/84/22/bd/8422bd2da436b5670e21400c3574336a.jpg -/-/-/
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+
+  border-radius: 50%;
+
+    -*-*- Aplicar el desvanecimiento circular a los contornos -*-*-
+    -webkit-mask-image: radial-gradient(circle, white 60%, transparent 100%);
+    mask-image: radial-gradient(circle, white 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, white 50%, transparent 70%);
+    mask-image: radial-gradient(circle, white 50%, transparent 70%);
+  ///  -webkit-mask-image: linear-gradient(to left, white 60%, transparent 100%);
+    mask-image: linear-gradient(to left, white 60%, transparent 100%);  ///
+}*/
+
+
+
+/*style={{
+  width: "300px";
+  borderRadius: "10px";
+  marginBottom: "20px";
+  boxShadow: "0 4px 10px rgba(0,0,0,0.2)";
+}}*/
+
+
+
+.page {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 30px ;
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* ------------------------------
+   BOTONES
+--------------------------------*/
+.btn,
+button {
+  background: #222;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.btn:hover,
+button:hover {
+  background: #444;
+}
+
+/* Botón rojo eliminar */
+.btn-danger {
+  background: #d60000;
+  color: FF0000;
+}
+
+.btn-danger:hover {
+  background: #b00000;
+}
+
+/* Botón azul editar */
+.btn-edit {
+  background: #005bbb;
+  color: 2BE33B;
+}
+
+.btn-edit:hover {
+  background: #004c9a;
+}
+
+/* ------------------------------
+   TABLAS
+--------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background: #222;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+table tr:hover {
+  background: #f0f0f0;
+}
+
+/* ------------------------------
+   FORMULARIOS
+--------------------------------*/
+.form-container {
+  background: white;
+  padding: 25px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #222;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+/* ------------------------------
+   MENSAJES
+--------------------------------*/
+.success-message {
+  padding: 12px;
+  background: #d1ffd1;
+  color: #0b7d0b;
+  border: 1px solid #64c864;
+  border-radius: 6px;
+}
+
+.error-message {
+  padding: 12px;
+  background: #ffd1d1;
+  color: #991111;
+  border: 1px solid #d45a5a;
+  border-radius: 6px;
+}
+
+/* ------------------------------
+   CONTENEDORES ESPECIALES
+--------------------------------*/
+.section {
+  margin-top: 25px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/

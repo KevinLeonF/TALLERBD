@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales */
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+/* Tarjetas generales */
+.card {
+  @apply bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Botón principal */
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold
+         hover:bg-blue-700 active:bg-blue-800 transition;
+}
+
+/* Botón de eliminar */
+.btn-danger {
+  @apply bg-red-600 text-white px-3 py-1 rounded-lg font-semibold
+         hover:bg-red-700 active:bg-red-800 transition;
+}
+
+/* Input general */
+.input {
+  @apply border border-gray-300 p-2 rounded-lg w-full mb-3
+         focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+/* Tabla */
+.table {
+  @apply w-full bg-white rounded-xl overflow-hidden shadow;
+}
+
+.table-header {
+  @apply bg-gray-200 font-semibold;
+}
+
+.table-cell {
+  @apply p-3 border-b;
+}
